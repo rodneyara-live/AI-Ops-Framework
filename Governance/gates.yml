@@ -1,0 +1,41 @@
+# Gates: paths, level and approvers
+# Level: open | gated | blocked
+# approvers: empty = no approvers needed (Free zone);
+#            single approver = anyone in the list can approve;
+#            require_all = all (use explicit list with require_all: true)
+#
+# Approvers are ROLES, not people. Role→person mapping is single-source.
+# If a path does not appear below, it defaults to "gated" (POL-002 §Zonas).
+
+gates:
+  - path: "Operations-Samples/"
+    level: "open"
+    approvers: []
+
+  - path: "Governance/SOPs/"
+    level: "gated"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+    note: "Gate applies to promoting status: draft → active. Creating/editing a draft SOP does not require prior approval (see POL-002 §Autonomous authority)."
+
+  - path: "Agents/"
+    level: "gated"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+
+  - path: "Agents/Workflows/"
+    level: "gated"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+
+  - path: "Governance/Policies/"
+    level: "blocked"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+    require_all: true
+
+  - path: "Governance/Roles/"
+    level: "gated"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+
+  - path: "Dev/"
+    level: "gated"
+    approvers: ["Chief of Staff", "CEO FinCo"]
+
+# Note: paths are matched by prefix. Wildcards (*) are supported for simple globs.

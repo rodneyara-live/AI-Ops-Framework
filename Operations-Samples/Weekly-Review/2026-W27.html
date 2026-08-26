@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinCo Retrospective · 29 Jun – 5 Jul 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* FinCo real identity — _Vault/DESIGN.md ("Deep Obsidian") */
+    --obsidian:#0F1316; --obsidian-light:#E9EBEA; --platino:#D2D5D3;
+    --terracota:#B24E32; --ambar:#C37A26; --verde-ok:#22C55E; --rojo-error:#EF4444;
+    --suave:#f5f4f2; --linea:#e6e3e0; --blanco:#fff; --texto:#26292a; --texto-suave:#6b6f6d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,'Segoe UI',Arial,Helvetica,sans-serif;color:var(--texto);background:#efeeec;padding:28px;line-height:1.55}
+  .wrap{max-width:880px;margin:0 auto;background:var(--blanco);border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(15,19,22,.14)}
+  header{background:linear-gradient(125deg,var(--obsidian),#20282b);color:var(--obsidian-light);padding:30px 36px}
+  header .brandmark{font-size:15px;letter-spacing:.14em;font-weight:800;color:#fff;margin-bottom:6px}
+  header .kick{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ambar);font-weight:700}
+  header h1{font-size:26px;margin:8px 0 6px;font-weight:800;color:#fff}
+  header .sub{font-size:13.5px;opacity:.8}
+  .callout{margin:26px 36px 6px;padding:18px 20px;background:var(--suave);border-left:5px solid var(--terracota);border-radius:8px}
+  .callout p{font-size:14.5px;color:var(--texto)}
+  .section{margin:22px 36px;border:1px solid var(--linea);border-radius:12px;overflow:hidden}
+  .section .shead{display:flex;align-items:center;gap:10px;padding:14px 18px;border-left:6px solid var(--accent);background:#fbfaf9}
+  .section .num{width:26px;height:26px;border-radius:7px;background:var(--accent);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .section .stitle{font-weight:800;font-size:15.5px;color:var(--obsidian)}
+  .section .sbody{padding:6px 20px 18px 20px;font-size:13.5px;color:var(--texto)}
+  .section .sbody p{margin:8px 0}
+  .section .sbody ul{margin:6px 0 6px 20px}
+  .section .sbody li{margin:5px 0}
+  .section .sbody strong{color:var(--obsidian)}
+  .section .sbody a{color:var(--terracota)}
+  .section .sbody code{background:var(--suave);padding:1px 5px;border-radius:4px;font-size:12.5px}
+  .section .sbody table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+  .section .sbody th{background:var(--suave);color:var(--texto-suave);text-transform:uppercase;font-size:10.5px;letter-spacing:.04em;text-align:left;padding:8px 10px;border-bottom:2px solid var(--linea)}
+  .section .sbody td{padding:8px 10px;border-bottom:1px solid var(--linea);vertical-align:top}
+  .section .sbody tr:last-child td{border-bottom:none}
+  footer{padding:16px 36px;background:var(--obsidian);color:var(--platino);font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media print{body{background:#fff;padding:0}.wrap{box-shadow:none;border-radius:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brandmark">FinCo</div>
+    <div class="kick">Weekly Executive Report</div>
+    <h1>FinCo Retrospective · 29 Jun – 5 Jul 2026</h1>
+    <div class="sub">Period: 2026-06-29 to 2026-07-05</div>
+  </header>
+  <div class="callout"><p>Roadmap 2026 v1 closed and rolled down to the whole team; DRI Map at ~62%; vault audit (30 findings) remediated 100% in one day + 7/10 structural hardening actions deployed. Main risk: Compliance Engine at 24% vs. criminal law effective Aug 3.</p></div>
+  
+  <div class="section">
+    <div class="shead" style="--accent:#C37A26">
+      <div class="num" style="background:#C37A26">2</div>
+      <div class="stitle">Meetings this week</div>
+    </div>
+    <div class="sbody"><table><thead><tr><th>Day</th><th>Meeting</th><th>Key decision / milestone</th></tr></thead><tbody><tr><td>Mon 29</td><td>—</td><td>DRI Map comp. 1-2-3 closed (100%). OKR-Agent born.</td></tr><tr><td>Tue 30</td><td>Team Sync + Roadmap with Alex Carver</td><td>Roadmap v1 approved (9 Q3 epics / 5 Q4). Onest enters trial. WhatsApp remains off.</td></tr><tr><td>Wed 1</td><td>Team alignment + Carlos Ruiz capture</td><td>Accountability: each DRI owns their plan (Linear). Biweekly review instituted. Payment promise rules (-2/+3 days) and NPR defined.</td></tr><tr><td>Thu 2</td><td>Team Sync + Strategy Engine Discovery</td><td>Ledger-9 (297GB) out of Supabase migration. Odoo = creditor CRM only. Strategy Engine starts simple.</td></tr><tr><td>Fri 3</td><td>Nova/Supabase architecture + audit close</td><td>Parallel migration (per-row switch), no big bang. Vault audit closed 100%.</td></tr></tbody></table></div>
+  </div>
+  <div class="section">
+    <div class="shead" style="--accent:#B24E32">
+      <div class="num" style="background:#B24E32">3</div>
+      <div class="stitle">Operational and strategic progress</div>
+    </div>
+    <div class="sbody"><p>DRI Map ~62% (4/15 closed: House in Order, PM Foundation, Orchestration Layer). Notable: FinCo Platform 78% and Nova 63% (LiveKit strong). Lagging: Compliance Engine 24%, Operational Independence 12%. New roles: Tomas (Commercial Director, JD-010), Elena (Compliance Manager, JD-009).</p></div>
+  </div>
+  <div class="section">
+    <div class="shead" style="--accent:#C37A26">
+      <div class="num" style="background:#C37A26">4</div>
+      <div class="stitle">Development and product — Cycle W27 (Linear)</div>
+    </div>
+    <div class="sbody"><p>Scope grew 38→80 issues during the week; <strong>59 closed (73%)</strong>. Per person: Andrés Vega 24 (Visits and Letters tech debt sweep), Marco 10, Isabella Torres 10, Daniela 9, Mateo Herrera 6. Of the 10 issues <em>planned</em> on 27-Jun, <strong>only 1 closed</strong> (PAY-305) — capacity was consumed by 3 production incidents: PAY-323 (361 duplicate cases, Fasttrack), PAY-317 (4 days writing to staging instead of prod) and PAY-315 (retries pointing to decommissioned Supabase project). To verify: PAY-183 (applicable local data-protection regulations risk) closed in Linear despite its description saying &quot;unresolved&quot;. W28 started today.</p></div>
+  </div>
+  <div class="section">
+    <div class="shead" style="--accent:#B24E32">
+      <div class="num" style="background:#B24E32">5</div>
+      <div class="stitle">Knowledge vault</div>
+    </div>
+    <div class="sbody"><p>Audit 2026-07-03: 6 critical + 10 high + 10 medium + 4 low, <strong>100% resolved</strong> same-day (gates unified, Cycle-Agent corrected, Atlas allowlist synced 5→22 scripts). Hardening: governance linter in CI, automatic generators, quarterly expired-doc review. New documents: DEC-005 to 009, SOP-007, ICP/Buyer-Personas v1.1. <strong>New this week:</strong> this very report was institutionalized (<code>WF-weekly-executive-report</code>).</p></div>
+  </div>
+  <div class="section">
+    <div class="shead" style="--accent:#C37A26">
+      <div class="num" style="background:#C37A26">6</div>
+      <div class="stitle">Open risks and blockers</div>
+    </div>
+    <div class="sbody"><ul><li>Criminal law Aug 3 vs. Compliance Engine at 24% — compliance meeting pending scheduling.</li><li>Ledger-9/Supabase/Odoo architecture with friction (Ledger-9 managers contacting Fasttrack).</li><li>WhatsApp without anti-blocking protocol.</li><li>Onboarding SOP (Onest) without first draft, 16 open questions.</li></ul></div>
+  </div>
+  <div class="section">
+    <div class="shead" style="--accent:#B24E32">
+      <div class="num" style="background:#B24E32">7</div>
+      <div class="stitle">Commitments crossing to next week</div>
+    </div>
+    <div class="sbody"><p>Due 10-Jul: Strategy Engine spec, dashboard/onboarding prototypes (Daniela), campaigns branch 4.0 to dev (Marco), compliance meeting (Elena + Alex Carver), continuation of campaign architecture before Cycle Planning.</p>
+<p>--- <em>Compressed version of <a href="2026-W27.md">2026-W27.md</a>. Generated by Cowork (WF-weekly-executive-report).</em></p></div>
+  </div>
+  <footer>
+    <span>FinCo-OS · Operations/Cadences/Weekly-Review/2026-W27-onepager.md</span>
+    <span>Chief of Staff · 2026-07-06</span>
+  </footer>
+</div>
+</body>
+</html>
